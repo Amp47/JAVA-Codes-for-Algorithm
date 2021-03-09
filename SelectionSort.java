@@ -11,11 +11,16 @@ procedure selection sort
 
       for j = i+1 to n 
          if list[j] < list[min] then
+
+         //if current found value is less than min
+
             min = j;
+            // set found value as new min
          end if
       end for
 
       // swap the minimum element with the current element
+
       if indexMin != i  then
          swap list[min] and list[i]
       end if
@@ -24,12 +29,15 @@ procedure selection sort
 end procedure
 
 
-In short Time cplexity in,
+In short Time complexity in,
 Best Case:O(n ^ 2)
 Worse case:O(n ^ 2)
 
 full explanation video:
 https://www.youtube.com/watch?v=9oWd4VJOwr0
+
+for visual representation:
+https://visualgo.net/en/sorting
 
 */
 
@@ -91,8 +99,12 @@ public class SelectionSort {
 
   // driver code
   public static void main(String args[]) {
+
     int[] data = { 7, 4, 10, 8, 3, 1 };
+
+    //here data is our array with static values.
     SelectionSort object1 = new SelectionSort();
+    // object is called to use the selectionsort() method
     object1.selectionSort(data);
     System.out.println("Sorted Array in Ascending Order: ");
     /*
